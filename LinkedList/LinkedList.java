@@ -5,7 +5,7 @@ import LinkedList.logic.*;
 public class LinkedList {
 
     public static void main(String args[]){
-        int[] arr = {1,6,4,6,4,7,3,5};
+        int[] arr = {1,2,3,4,5,6};
 //        Node y = new Node(arr[3]);
 //        System.out.println(y.data);
         Node head = ConvertArr2LL.convertArr2LL(arr);
@@ -28,7 +28,10 @@ public class LinkedList {
 //        Node insertBefore = InsertBeforeValue.insertBefore(head, 5, 3);
 //        Node insertAfter = InsertAfterValue.insertAfter(head, 6,3);
 //        Node reverse = ReverseLL.reverse(head); //iterative
-        Node reverse = RecursiveReverseLL.reverse(head); // using recursion
-        TraverseLL.traverseLL(reverse);
+//        Node reverse = RecursiveReverseLL.reverse(head); // using recursion
+//        TraverseLL.traverseLL(reverse);
+        Node mid = MidOfLL.Mid(head);
+        System.out.println(mid.data);
+
     }
 }
