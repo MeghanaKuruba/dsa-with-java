@@ -26,7 +26,9 @@ public class LinkedList {
 //        Node insertTail = InsertAtTail.insertAtTail(head, 9);
 //        Node insert = InsertAtKthPlace.insertAtKthPlace(head, 9, 98);
 //        Node insertBefore = InsertBeforeValue.insertBefore(head, 5, 3);
-        Node insertAfter = InsertAfterValue.insertAfter(head, 6,3);
-        TraverseLL.traverseLL(insertAfter);
+//        Node insertAfter = InsertAfterValue.insertAfter(head, 6,3);
+//        Node reverse = ReverseLL.reverse(head); //iterative
+        Node reverse = RecursiveReverseLL.reverse(head); // using recursion
+        TraverseLL.traverseLL(reverse);
     }
 }
