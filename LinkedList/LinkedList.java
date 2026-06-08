@@ -5,10 +5,12 @@ import LinkedList.logic.*;
 public class LinkedList {
 
     public static void main(String args[]){
-        int[] arr = {1,2,3,6,5,5,6};
+//        int[] arr = {1,2,3,4,5};
+//        int[] arr1 = {6,7,8,9};
 //        Node y = new Node(arr[3]);
 //        System.out.println(y.data);
-        Node head = ConvertArr2LL.convertArr2LL(arr);
+//        Node head = ConvertArr2LL.convertArr2LL(arr);
+//        Node head2 = ConvertArr2LL.convertArr2LL(arr1);
 //        System.out.println(head.data);
 //        TraverseLL.traverseLL(head);
 //        LengthLL length = new LengthLL(); // create an object for non-static method
@@ -33,14 +35,21 @@ public class LinkedList {
 //        TraverseLL.traverseLL(reverse);
 //        Node mid = MidOfLL.Mid(head);
 //        System.out.println(mid.data);
-
-//        Node head = new Node(1);
-//        head.next = new Node(2);
-//        head.next.next = new Node(3);
-//        head.next.next.next = new Node(4);
 //
-//        // Create a cycle (4 -> 2)
+        Node head = new Node(1);
+        head.next = new Node(2);
+        head.next.next = new Node(3);
+        head.next.next.next = new Node(4);
+        head.next.next.next.next = new Node(7);
+        head.next.next.next.next.next = new Node(8);
+        head.next.next.next.next.next.next = new Node(9);
+
+        // Create a cycle (4 -> 2)
 //        head.next.next.next.next = head.next;
+
+        Node head2 = new Node(5);
+        head2.next = new Node(6);
+        head2.next.next = head.next.next.next.next;
 //
 ////        System.out.println(DetectCycleLL.detect(head));
 //        Node start = StartOfLoopLL.start(head);
@@ -50,7 +59,14 @@ public class LinkedList {
 //        } else {
 //            System.out.println("No cycle found");
 //        }
-        Node delete = DeleteMidLL.delete(head);
-        TraverseLL.traverseLL(delete);
+//        Node delete = DeleteMidLL.delete(head);
+//        Node remove = RemoveNthNodeFromEndLL.remove(head, 5);
+//        TraverseLL.traverseLL(remove);
+        Node intersection = IntersectionLL.intersection(head, head2);
+        if (intersection != null) {
+            System.out.println(intersection.data);
+        } else {
+            System.out.println("No intersection found");
+        }
     }
 }
