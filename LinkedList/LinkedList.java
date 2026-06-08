@@ -5,7 +5,7 @@ import LinkedList.logic.*;
 public class LinkedList {
 
     public static void main(String args[]){
-        int[] arr = {1,2,3,4,4,5,5,6};
+        int[] arr = {1,2,3,6,5,5,6};
 //        Node y = new Node(arr[3]);
 //        System.out.println(y.data);
         Node head = ConvertArr2LL.convertArr2LL(arr);
@@ -50,6 +50,7 @@ public class LinkedList {
 //        } else {
 //            System.out.println("No cycle found");
 //        }
-
+        Node delete = DeleteMidLL.delete(head);
+        TraverseLL.traverseLL(delete);
     }
 }
