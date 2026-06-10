@@ -2,15 +2,18 @@ package LinkedList;
 
 import LinkedList.logic.*;
 
+import java.util.SortedMap;
+
 public class LinkedList {
 
     public static void main(String args[]){
-        int[] arr = {1,3,5,7,9};
-        int[] arr1 = {2,4,6,8};
+        int[] arr = {1,2,3,4,5,6};
+//        int[] arr = {1,2,3,2,1};
+//        int[] arr1 = {2,4,6,8};
 //        Node y = new Node(arr[3]);
 //        System.out.println(y.data);
         Node head = ConvertArr2LL.convertArr2LL(arr);
-        Node head2 = ConvertArr2LL.convertArr2LL(arr1);
+//        Node head2 = ConvertArr2LL.convertArr2LL(arr1);
 //        System.out.println(head.data);
 //        TraverseLL.traverseLL(head);
 //        LengthLL length = new LengthLL(); // create an object for non-static method
@@ -68,7 +71,10 @@ public class LinkedList {
 //        } else {
 //            System.out.println("No intersection found");
 //        }
-        Node merge = MergeSort.merge(head, head2);
-        TraverseLL.traverseLL(merge);
+//        Node merge = MergeSort.merge(head, head2);
+//        TraverseLL.traverseLL(merge);
+//        System.out.println(PalindromeLL.palindrome(head));
+        Node reorder = ReorderLL.reorder(head);
+        TraverseLL.traverseLL(reorder);
     }
 }
