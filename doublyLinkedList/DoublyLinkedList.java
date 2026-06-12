@@ -13,8 +13,9 @@ public class DoublyLinkedList {
 //        Node delete = DeleteNthNode.delete(head, 1);
 //        Node delete = DeleteNthValue.delete(head, 8);
 //        Node insert = InsertHead.insert(head, 5);
-        Node insert = InsertAfterTail.insert(head, 7);
+//        Node insert = InsertAfterTail.insert(head, 7);
 //        Node insert = InsertBeforeNthNode.insert(head, 1,3);
+        Node insert = InsertBeforeKthValue.insert(head, 6,1);
         Traversal.traversal(insert);
     }
 }
