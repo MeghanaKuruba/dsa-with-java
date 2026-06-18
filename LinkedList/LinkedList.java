@@ -1,6 +1,8 @@
 package LinkedList;
 
 import LinkedList.logic.*;
+import LinkedList.logic.TraverseLL;
+import doublyLinkedList.logic.Traversal;
 
 import java.util.SortedMap;
 
@@ -12,7 +14,7 @@ public class LinkedList {
 //        int[] arr1 = {2,4,6,8};
 //        Node y = new Node(arr[3]);
 //        System.out.println(y.data);
-        Node head = ConvertArr2LL.convertArr2LL(arr);
+//        Node head = ConvertArr2LL.convertArr2LL(arr);
 //        Node head2 = ConvertArr2LL.convertArr2LL(arr1);
 //        System.out.println(head.data);
 //        TraverseLL.traverseLL(head);
@@ -74,7 +76,20 @@ public class LinkedList {
 //        Node merge = MergeSort.merge(head, head2);
 //        TraverseLL.traverseLL(merge);
 //        System.out.println(PalindromeLL.palindrome(head));
-        Node reorder = ReorderLL.reorder(head);
-        TraverseLL.traverseLL(reorder);
+//        Node reorder = ReorderLL.reorder(head);
+//        TraverseLL.traverseLL(reorder);
+
+        MergeKSortedLists obj = new MergeKSortedLists();
+
+        // Example lists
+        Node l1 = new Node(1, new Node(4, new Node(5)));
+        Node l2 = new Node(1, new Node(3, new Node(4)));
+        Node l3 = new Node(2, new Node(6));
+
+        Node[] lists = {l1, l2, l3};
+
+        Node result = obj.merge(lists);
+
+        TraverseLL.traverseLL(result);
     }
 }
