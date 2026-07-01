@@ -3,9 +3,7 @@ package LinkedList.logic;
 public class InsertAtKthPlace {
     public static Node insertAtKthPlace(Node head, int k, int el){
         if (head == null) {
-            if (k==1){
                 return new Node(el);
-            }
         }
         if(k==1){
 //            Node insert =InsertAtHead.insertAtHead(head, el);

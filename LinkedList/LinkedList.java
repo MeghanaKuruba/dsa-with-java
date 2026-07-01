@@ -9,12 +9,12 @@ import java.util.SortedMap;
 public class LinkedList {
 
     public static void main(String args[]){
-        int[] arr = {1,2,3,4,5,6};
+        int[] arr = {1,2,3,4,5,6,7};
 //        int[] arr = {1,2,3,2,1};
 //        int[] arr1 = {2,4,6,8};
 //        Node y = new Node(arr[3]);
 //        System.out.println(y.data);
-//        Node head = ConvertArr2LL.convertArr2LL(arr);
+        Node head = ConvertArr2LL.convertArr2LL(arr);
 //        Node head2 = ConvertArr2LL.convertArr2LL(arr1);
 //        System.out.println(head.data);
 //        TraverseLL.traverseLL(head);
@@ -79,17 +79,19 @@ public class LinkedList {
 //        Node reorder = ReorderLL.reorder(head);
 //        TraverseLL.traverseLL(reorder);
 
-        MergeKSortedLists obj = new MergeKSortedLists();
+//        MergeKSortedLists obj = new MergeKSortedLists();
+//
+//        // Example lists
+//        Node l1 = new Node(1, new Node(4, new Node(5)));
+//        Node l2 = new Node(1, new Node(3, new Node(4)));
+//        Node l3 = new Node(2, new Node(6));
+//
+//        Node[] lists = {l1, l2, l3};
+//
+//        Node result = obj.merge(lists);
 
-        // Example lists
-        Node l1 = new Node(1, new Node(4, new Node(5)));
-        Node l2 = new Node(1, new Node(3, new Node(4)));
-        Node l3 = new Node(2, new Node(6));
+        Node reverse = ReverseKGroup.reverseKGroup(head, 3);
 
-        Node[] lists = {l1, l2, l3};
-
-        Node result = obj.merge(lists);
-
-        TraverseLL.traverseLL(result);
+        TraverseLL.traverseLL(reverse);
     }
 }
