@@ -7,8 +7,7 @@ public class InsertAfterValue {
             return null;
         }
         if(head.data==val){
-            Node newNode = new Node(el,head.next);
-            head.next=newNode;
+            head.next = new Node(el,head.next);
             return head;
         }
         Node temp=head;
