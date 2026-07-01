@@ -9,12 +9,12 @@ import java.util.SortedMap;
 public class LinkedList {
 
     public static void main(String args[]){
-//        int[] arr = {1,2,3,4,5,6,7};
+        int[] arr = {3,5,8,1,2,6,9,7,3};
 //        int[] arr = {1,2,3,2,1};
 //        int[] arr1 = {2,4,6,8};
 //        Node y = new Node(arr[3]);
 //        System.out.println(y.data);
-//        Node head = ConvertArr2LL.convertArr2LL(arr);
+        Node head = ConvertArr2LL.convertArr2LL(arr);
 //        Node head2 = ConvertArr2LL.convertArr2LL(arr1);
 //        System.out.println(head.data);
 //        TraverseLL.traverseLL(head);
@@ -73,7 +73,7 @@ public class LinkedList {
 //        } else {
 //            System.out.println("No intersection found");
 //        }
-//        Node merge = MergeSort.merge(head, head2);
+//        Node merge = Merge2SortedLists.merge(head, head2);
 //        TraverseLL.traverseLL(merge);
 //        System.out.println(PalindromeLL.palindrome(head));
 //        Node reorder = ReorderLL.reorder(head);
@@ -93,43 +93,47 @@ public class LinkedList {
 //        Node reverse = ReverseKGroup.reverseKGroup(head, 3);
 
 
-        // Creating the list:
-        // 1 -> 2 -> 3 -> 4
-        // |    |    |    |
-        // 7    8    9    10
-        // |    |
-        // 11   12
+//        // Creating the list:
+//        // 1 -> 2 -> 3 -> 4
+//        // |    |    |    |
+//        // 7    8    9    10
+//        // |    |
+//        // 11   12
+//
+//        Node head = new Node(1);
+//        head.next = new Node(2);
+//        head.next.next = new Node(3);
+//        head.next.next.next = new Node(4);
+//
+//        // Child lists
+//        head.child = new Node(7);
+//        head.child.child = new Node(11);
+//
+//        head.next.child = new Node(8);
+//        head.next.child.child = new Node(12);
+//
+//        head.next.next.child = new Node(9);
+//        head.next.next.next.child = new Node(10);
+//
+//        // Call flatten
+//        Node flatHead = FlattenLL.flattenLL(head);
+//
+//        // Print result
+//        printList(flatHead);
+//
+//    }
+//
+//    // Function to print flattened list (using child pointer)
+//    public static void printList(Node head) {
+//        Node temp = head;
+//        while (temp != null) {
+//            System.out.print(temp.data + " -> ");
+//            temp = temp.child;
+//        }
+//        System.out.println("null");
 
-        Node head = new Node(1);
-        head.next = new Node(2);
-        head.next.next = new Node(3);
-        head.next.next.next = new Node(4);
+        Node sort = SortLL.sortLL(head);
+        TraverseLL.traverseLL(sort);
 
-        // Child lists
-        head.child = new Node(7);
-        head.child.child = new Node(11);
-
-        head.next.child = new Node(8);
-        head.next.child.child = new Node(12);
-
-        head.next.next.child = new Node(9);
-        head.next.next.next.child = new Node(10);
-
-        // Call flatten
-        Node flatHead = FlattenLL.flattenLL(head);
-
-        // Print result
-        printList(flatHead);
-
-    }
-
-    // Function to print flattened list (using child pointer)
-    public static void printList(Node head) {
-        Node temp = head;
-        while (temp != null) {
-            System.out.print(temp.data + " -> ");
-            temp = temp.child;
-        }
-        System.out.println("null");
     }
 }

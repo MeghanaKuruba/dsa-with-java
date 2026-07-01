@@ -1,6 +1,6 @@
 package LinkedList.logic;
 
-public class MergeSort {
+public class Merge2SortedLists {
 
     //using dummyNode
     public static Node merge(Node head1, Node head2){
