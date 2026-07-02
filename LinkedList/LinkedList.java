@@ -9,13 +9,13 @@ import java.util.SortedMap;
 public class LinkedList {
 
     public static void main(String args[]){
-        int[] arr = {3,5,8,1,2,6,9,7,3};
-//        int[] arr = {1,2,3,2,1};
-//        int[] arr1 = {2,4,6,8};
+//        int[] arr = {3,5,8,1,2,6,9,7,3};
+        int[] arr = {9,9,9};
+        int[] arr1 = {1,0,0};
 //        Node y = new Node(arr[3]);
 //        System.out.println(y.data);
         Node head = ConvertArr2LL.convertArr2LL(arr);
-//        Node head2 = ConvertArr2LL.convertArr2LL(arr1);
+        Node head2 = ConvertArr2LL.convertArr2LL(arr1);
 //        System.out.println(head.data);
 //        TraverseLL.traverseLL(head);
 //        LengthLL length = new LengthLL(); // create an object for non-static method
@@ -132,8 +132,10 @@ public class LinkedList {
 //        }
 //        System.out.println("null");
 
-        Node sort = SortLL.sortLL(head);
-        TraverseLL.traverseLL(sort);
+//        Node sort = SortLL.sortLL(head);
+//        TraverseLL.traverseLL(sort);
 
+        Node add = Add2Num.add(head, head2);
+        TraverseLL.traverseLL(add);
     }
 }
