@@ -141,7 +141,8 @@ public class LinkedList {
 //        Node rotate = RotateLL.rotate(head, 10);
 //        TraverseLL.traverseLL(rotate);
 
-        Node copy = CopyListWithRandomPointersUsingHashMap.copy(head);
+//        Node copy = CopyListWithRandomPointersUsingHashMap.copy(head);
+        Node copy = CopyLinkedListWithRandomPointerUsingNodeInsertionMethod.copy(head);
         TraverseLL.traverseLL(copy);
     }
 }
