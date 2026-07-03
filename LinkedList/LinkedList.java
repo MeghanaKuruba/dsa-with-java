@@ -138,7 +138,10 @@ public class LinkedList {
 //        Node add = Add2Num.add(head, head2);
 //        TraverseLL.traverseLL(add);
 
-        Node rotate = RotateLL.rotate(head, 10);
-        TraverseLL.traverseLL(rotate);
+//        Node rotate = RotateLL.rotate(head, 10);
+//        TraverseLL.traverseLL(rotate);
+
+        Node copy = CopyListWithRandomPointersUsingHashMap.copy(head);
+        TraverseLL.traverseLL(copy);
     }
 }
