@@ -48,6 +48,7 @@ public class LRUCache {
 
         if(map.containsKey(key)){
             remove(map.get(key));
+            map.remove(key);
         }
 
         map.put(key,node);

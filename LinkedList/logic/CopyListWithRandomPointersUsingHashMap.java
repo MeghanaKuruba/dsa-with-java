@@ -17,7 +17,7 @@ public class CopyListWithRandomPointersUsingHashMap {
         curr = head;
 
         while (curr != null){
-            Node copyNode = map.get(curr); // get(ket) gives value, curr is key, so copyNode's actual value will be new Node(curr.next)
+            Node copyNode = map.get(curr); // get(ket) gives value, curr is key, so copyNode's actual value will be new Node(curr.data)
 
             copyNode.next = map.get(curr.next);
             copyNode.random = map.get(curr.random);
