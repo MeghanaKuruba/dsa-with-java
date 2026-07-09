@@ -1,13 +1,38 @@
 package Arrays;
 
-import Arrays.logic.MinMax;
-import Arrays.logic.Reverse;
+import Arrays.logic.*;
+
+import java.util.Scanner;
 
 public class Arrays {
     public static void main(String args[]){
-        int[] arr = {4,3,5,2};
+
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int[] arr = new int[n];
+//
+//        //Taking Input
+//        System.out.println("Enter elements");
+//        for (int i = 0; i<n; i++){
+//            arr[i] = sc.nextInt();
+//        }
+//
+//        //Print array
+//        for (int i = 0; i<n; i++){
+//            System.out.print(arr[i]+" ");
+//        }
+
+        int[] arr = {8,1,5,8,6,7};
+
 
 //        MinMax.minMax(arr);
-        Reverse.reverse(arr);
+//        Reverse.reverse(arr);
+//        PrefixSum.prefixSum(arr);
+//        int sum = TargetSum.targetSum(arr, 10);
+
+//        int ans = UniqueElement.unique(arr);
+//        System.out.println(ans);
+//        System.out.println(SecondLargest.secondLargest(arr));
+        Swap.swap(2,3);
     }
 }
