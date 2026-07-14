@@ -22,7 +22,7 @@ public class Arrays {
 //            System.out.print(arr[i]+" ");
 //        }
 
-        int[] arr = {8,1,5,8,6,7};
+//        int[] arr = {8,1,5,8,6,7};
 
 
 //        MinMax.minMax(arr);
@@ -38,6 +38,13 @@ public class Arrays {
 //        FrequencyArray.frequency(arr);
 //        int[] arr = {0,1,0,1,1,1,0,0};
 //        SortZeorsAndOnes.sort(arr);
-        SortArray.sort(arr);
+//        SortArray.sort(arr);
+
+//        int[] arr = {1, 5, 6, 7, 8, 8};
+//        int[] arr2 = {0,1,4,9};
+//        MergeSortedArray.merge(arr, arr2, arr.length, arr2.length);
+
+        int[] arr = {2,0,2,1,1,1,0,1,2,0};
+        SortColors.sortcolors(arr);
     }
 }
