@@ -1,10 +1,11 @@
 package Arrays;
 
 import Arrays.logic.*;
+import java.util.Arrays;
 
 import java.util.Scanner;
 
-public class Arrays {
+public class ArraysMain {
     public static void main(String args[]){
 
 //        Scanner sc = new Scanner(System.in);
@@ -22,7 +23,7 @@ public class Arrays {
 //            System.out.print(arr[i]+" ");
 //        }
 
-//        int[] arr = {8,1,5,8,6,7};
+        int[] arr = {8,1,5,8,6,7};
 
 
 //        MinMax.minMax(arr);
@@ -44,7 +45,12 @@ public class Arrays {
 //        int[] arr2 = {0,1,4,9};
 //        MergeSortedArray.merge(arr, arr2, arr.length, arr2.length);
 
-        int[] arr = {2,0,2,1,1,1,0,1,2,0};
-        SortColors.sortcolors(arr);
+//        int[] arr = {2,0,2,1,1,1,0,1,2,0};
+//        SortColors.sortcolors(arr);
+
+        int[] result = TwoSum.twoSum(arr, 8);
+
+        System.out.println(Arrays.toString(result));
+
     }
 }
