@@ -23,7 +23,7 @@ public class ArraysMain {
 //            System.out.print(arr[i]+" ");
 //        }
 
-        int[] arr = {8,1,5,8,6,7};
+//        int[] arr = {8,1,5,8,6,7};
 
 
 //        MinMax.minMax(arr);
@@ -48,8 +48,28 @@ public class ArraysMain {
 //        int[] arr = {2,0,2,1,1,1,0,1,2,0};
 //        SortColors.sortcolors(arr);
 
-        int[] result = TwoSum.twoSum(arr, 8);
+//        int[] result = TwoSum.twoSum(arr, 8);
+//
+//        System.out.println(Arrays.toString(result));
 
+//        int result = RemoveElement.remove(arr, 8);
+//        // The remaining elements of arr are not important as well as the size of arr.
+//        // It does not matter what you leave beyond the returned k
+//        // if arr = {8,1,5,8,6,7} consider the result arr is like this: [1,5,6,7,_,_] so k = 4
+//        System.out.println(Arrays.toString(arr));
+//        System.out.println(result);
+
+//        int[] arr = {1,1,3,3,6,6,6,6,7};
+//
+//        int result = RemoveDuplicatesFromSortedArray.remove(arr);
+//
+//        System.out.println(Arrays.toString(arr));
+//
+//        System.out.println(result);
+
+        int[] arr = {1,2,3,4};
+
+        int[] result = ProductOfArrayExceptSelf.product(arr);
         System.out.println(Arrays.toString(result));
 
     }
