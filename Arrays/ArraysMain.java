@@ -69,8 +69,10 @@ public class ArraysMain {
 
         int[] arr = {1,2,3,4};
 
-        int[] result = ProductOfArrayExceptSelf.product(arr);
-        System.out.println(Arrays.toString(result));
+//        int[] result = ProductOfArrayExceptSelf.product(arr);
+//        System.out.println(Arrays.toString(result));
 
+        int result = BinarySearch.search(arr, 3);
+        System.out.println(result);
     }
 }
