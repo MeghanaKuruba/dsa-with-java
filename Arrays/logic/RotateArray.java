@@ -31,6 +31,10 @@ public class RotateArray {
 //        }
 //        Traversal.traversal(a);
 
+        if (arr == null || arr.length == 0) {
+            return;
+        }
+
         swap(arr, n-k, n-1);
         swap(arr, 0, n-k-1);
         swap(arr, 0, n-1);

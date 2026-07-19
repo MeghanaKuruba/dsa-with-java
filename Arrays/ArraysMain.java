@@ -1,6 +1,8 @@
 package Arrays;
 
 import Arrays.logic.*;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import java.util.Scanner;
@@ -67,12 +69,22 @@ public class ArraysMain {
 //
 //        System.out.println(result);
 
-        int[] arr = {1,2,3,4};
+//        int[] arr = {1,0,2,0,3,4};
 
 //        int[] result = ProductOfArrayExceptSelf.product(arr);
 //        System.out.println(Arrays.toString(result));
 
-        int result = BinarySearch.search(arr, 3);
+//        int result = BinarySearch.search(arr, 3);
+//        System.out.println(result);
+
+//        MoveZerosToEnd.move(arr);
+//        int result = LinearSearch.search(arr, 3);
+//        System.out.println(result);
+
+        int[] arr1 = {1,1,2,3,3,4,5};
+        int[] arr2 = {1,2,3,4,5,6};
+
+        ArrayList<Integer> result = UnionOfTwoSortedArray.union(arr1, arr2);
         System.out.println(result);
     }
 }
