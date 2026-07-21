@@ -81,13 +81,21 @@ public class ArraysMain {
 //        int result = LinearSearch.search(arr, 3);
 //        System.out.println(result);
 
-        int[] arr1 = {1,3,3,7,8,};
-        int[] arr2 = {1,2,3,4,5,6};
+//        int[] arr1 = {1,3,3,7,8,};
+//        int[] arr2 = {1,2,3,4,5,6};
 
 //        ArrayList<Integer> result = UnionOfTwoSortedArray.union(arr1, arr2);
 //        System.out.println(result);
 
-        int[] result = IntersectionOfTwoArrays.intersection(arr1, arr2);
-        System.out.println(Arrays.toString(result));
+//        int[] result = IntersectionOfTwoArrays.intersection(arr1, arr2);
+//        System.out.println(Arrays.toString(result));
+
+//        int[] arr = {1,2,3,4};
+
+//        int result = MissingElementInArray.missing(arr);
+
+        int[] arr = {1,1,0,0,1,1,1,0,1,0,1};
+        int result = MaxConsecutiveOnes.max(arr);
+        System.out.println(result);
     }
 }
