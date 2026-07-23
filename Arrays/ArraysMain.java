@@ -94,8 +94,14 @@ public class ArraysMain {
 
 //        int result = MissingElementInArray.missing(arr);
 
-        int[] arr = {1,1,0,0,1,1,1,0,1,0,1};
-        int result = MaxConsecutiveOnes.max(arr);
+//        int[] arr = {1,1,0,0,1,1,1,0,1,0,1};
+//        int result = MaxConsecutiveOnes.max(arr);
+
+//        int[] arr = {1,1,2,2,3,4,4,5,5};
+//        int result = FindNumberAppearsOnceAndOtherTwice.find(arr);
+
+        int[] arr = {5,2,2,5,1,1,1,1,4};
+        int result = LongestSubarraySumEqualsK.longest(arr, 4);
         System.out.println(result);
     }
 }
