@@ -100,8 +100,11 @@ public class ArraysMain {
 //        int[] arr = {1,1,2,2,3,4,4,5,5};
 //        int result = FindNumberAppearsOnceAndOtherTwice.find(arr);
 
-        int[] arr = {5,2,2,5,1,1,1,1,4};
-        int result = LongestSubarraySumEqualsK.longest(arr, 4);
+//        int[] arr = {5,2,2,5,1,1,1,1,4};
+//        int result = LongestSubarraySumEqualsK.longest(arr, 4);
+
+        int[] arr = {1,2,3,-3,1,1,1,4,2,-3};
+        int result = CountSubarraysumEqualsK.count(arr, 3);
         System.out.println(result);
     }
 }
