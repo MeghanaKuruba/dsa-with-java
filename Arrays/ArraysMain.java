@@ -103,8 +103,12 @@ public class ArraysMain {
 //        int[] arr = {5,2,2,5,1,1,1,1,4};
 //        int result = LongestSubarraySumEqualsK.longest(arr, 4);
 
-        int[] arr = {1,2,3,-3,1,1,1,4,2,-3};
-        int result = CountSubarraysumEqualsK.count(arr, 3);
+//        int[] arr = {1,2,3,-3,1,1,1,4,2,-3};
+//        int result = CountSubarraysumEqualsK.count(arr, 3);
+//        System.out.println(result);
+
+        int[] arr = {5,5,1,1,5,5,1,7,5,3,5};
+        int result = MajorityElement.majority(arr);
         System.out.println(result);
     }
 }
