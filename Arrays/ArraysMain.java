@@ -107,8 +107,12 @@ public class ArraysMain {
 //        int result = CountSubarraysumEqualsK.count(arr, 3);
 //        System.out.println(result);
 
-        int[] arr = {5,5,1,1,5,5,1,7,5,3,5};
-        int result = MajorityElement.majority(arr);
+//        int[] arr = {5,5,1,1,5,5,1,7,5,3,5};
+//        int result = MajorityElement.majority(arr);
+//        System.out.println(result);
+
+        int[] arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        int result = MaximumSubarraySum.max(arr);
         System.out.println(result);
     }
 }

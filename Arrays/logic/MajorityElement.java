@@ -49,6 +49,9 @@ public class MajorityElement {
 
         // Step 2: Verify that the candidate is actually
         // the majority element
+        // in question if they mention: You may assume that the majority element always exists in the array.
+        // so this condition check is not required
+        // directly u can return el;
         int cnt1 = 0;
 
         for (int i = 0; i < n; i++) {
