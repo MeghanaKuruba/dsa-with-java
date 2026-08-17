@@ -111,8 +111,13 @@ public class ArraysMain {
 //        int result = MajorityElement.majority(arr);
 //        System.out.println(result);
 
-        int[] arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-        int result = MaximumSubarraySum.max(arr);
-        System.out.println(result);
+//        int[] arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+//        int result = MaximumSubarraySum.max(arr);
+//        System.out.println(result);
+
+//        int[] arr = {3, 1, -2, -5, 2, -4};
+        int[] arr = {1, 2, -4, -5, 3, 4, -6, -5, -6, 9, 8, 6, 8, 6};
+        int[] result = RearrangeArrayElementsBySign.reaarange(arr);
+        System.out.println(Arrays.toString(result));
     }
 }
