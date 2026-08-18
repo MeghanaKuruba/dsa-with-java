@@ -116,8 +116,15 @@ public class ArraysMain {
 //        System.out.println(result);
 
 //        int[] arr = {3, 1, -2, -5, 2, -4};
-        int[] arr = {1, 2, -4, -5, 3, 4, -6, -5, -6, 9, 8, 6, 8, 6};
-        int[] result = RearrangeArrayElementsBySign.reaarange(arr);
-        System.out.println(Arrays.toString(result));
+//        int[] arr = {1, 2, -4, -5, 3, 4, -6, -5, -6, 9, 8, 6, 8, 6};
+//        int[] result = RearrangeArrayElementsBySign.reaarange(arr);
+//        System.out.println(Arrays.toString(result));
+
+        int[] arr = {22, 456, 33, 3456, 9};
+//        int result = FindNumberswithEvenNumberOfDigits.findNumbers(arr);
+//        System.out.println(result);
+
+        int[] result = ConcatenationOfArray.getConcatenation(arr);
+        Traversal.traversal(result);
     }
 }
